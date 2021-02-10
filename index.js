@@ -41,14 +41,14 @@ $('.math').mouseenter(() => { $('.math p').slideDown(500); }).mouseleave(() => {
 
 /*********   Check mark hover   ********/
 
-$('.check').mouseenter((e) => {
-    $(e.target).children('.far').css({
+$('.check').mouseenter(() => {
+    $(this).children('.far').css({
         'font-weight': 'bold',
         'color': 'green'
     });
 });
-$('.check').mouseleave((event) => {
-    $(event.target).children('.far').css({
+$('.check').mouseleave(() => {
+    $(this).children('.far').css({
         'font-weight': 'normal',
         'color': 'black'
     });
@@ -57,16 +57,16 @@ $('.check').mouseleave((event) => {
 
 /*********   Event hover   ****/
 
-$('.event').mouseenter((e)=>{
-$(e.target).find('p').css('opacity','1');
-$(e.target).find('.eventDate').css({
+$('.event').mouseenter(()=>{
+$(this).find('p').css('opacity','1');
+$(this).find('.eventDate').css({
     'border':' 1px solid #00a107',
     'color':'#00a107'
 });
 });
-$('.event').mouseleave((e)=>{
-    $(e.target).find('p').css('opacity','.8');
-    $(e.target).find('.eventDate').css({
+$('.event').mouseleave(()=>{
+    $(this).find('p').css('opacity','.8');
+    $(this).find('.eventDate').css({
         'border':' 1px solid #c7c7c7bd',
         'color':'black'});
     });
