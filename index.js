@@ -41,30 +41,32 @@ $('.math').mouseenter(() => { $('.math p').slideDown(500); }).mouseleave(() => {
 
 /*********   Check mark hover   ********/
 
-$('.check').mouseenter(() => {
+$('.check').mouseenter(function() {
     $(this).children('.far').css({
         'font-weight': 'bold',
         'color': 'green'
     });
+    $(this).children('span').css('opacity','1');
 });
-$('.check').mouseleave(() => {
+$('.check').mouseleave(function(){
     $(this).children('.far').css({
         'font-weight': 'normal',
         'color': 'black'
     });
+    $(this).children('span').css('opacity','.7');
 });
 
 
 /*********   Event hover   ****/
 
-$('.event').mouseenter(()=>{
+$('.event').mouseenter(function(){
 $(this).find('p').css('opacity','1');
 $(this).find('.eventDate').css({
     'border':' 1px solid #00a107',
     'color':'#00a107'
 });
 });
-$('.event').mouseleave(()=>{
+$('.event').mouseleave(function(){
     $(this).find('p').css('opacity','.8');
     $(this).find('.eventDate').css({
         'border':' 1px solid #c7c7c7bd',
@@ -77,3 +79,4 @@ $('.event').mouseleave(()=>{
     $('.searchblock').on('click',()=>{
 $('.block').slideToggle();
     });
+
