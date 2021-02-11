@@ -445,16 +445,24 @@ button.apply {
 /*************************** TESTIMONIALS ****************/
 
 
-.sara {
+/*************************** TESTIMONIALS ****************/
+
+
+.testimonials {
     background-color: #f1f4f7;
     padding: 50px 25px;
 }
 
-.sara p {
+.testimonials .sara p {
     width: 100%;
     background-color: white;
     padding: 15px;
     border-radius: 10px;
+}
+.testimonials .why span{
+    opacity: .7;
+    font-size: .8em;
+    font-weight: bold;
 }
 
 .check {
@@ -464,6 +472,7 @@ button.apply {
 .check .far {
     transition: all ease-in-out .2s;
 }
+
 
 /*************    Footer  *******************/
 
